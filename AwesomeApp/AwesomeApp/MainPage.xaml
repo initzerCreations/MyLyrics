@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AwesomeApp.MainPage"
+             NavigationPage.HasNavigationBar="False">
+    <ScrollView>
+    <StackLayout x:Name="sl" BackgroundColor="Black"
+                 >
+        <!-- Place new controls here -->
+        <StackLayout HeightRequest="20">
+            
+        </StackLayout>
+        <Label x:Name="Tittle"
+               Text="MyLyrics"
+               TextColor="HotPink"
+               FontAttributes="Bold"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="StartAndExpand"
+               Scale="3"
+               FontSize="Title"
+               ></Label>
+        <StackLayout HeightRequest="20">
+
+        </StackLayout>
+        <Label x:Name="lirycsLabel" Text="Here will appear the awesome lyrics" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"
+           TextColor="White"
+           FontSize="Medium"/>
+        <StackLayout HeightRequest="20">
+
+        </StackLayout>
+        <Entry Placeholder="Put your artist name here :)"
+               BackgroundColor="White"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               PlaceholderColor="HotPink"
+               TextColor="Black"/>
+        <Entry Placeholder="Put your song name here :)"
+               BackgroundColor="White"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               PlaceholderColor="HotPink"
+               TextColor="Black"/>
+        <StackLayout HeightRequest="20">
+
+        </StackLayout>
+        <Button Text="SEARCH LYRICS" Clicked="Handle_Clicked" 
+                BackgroundColor="HotPink"
+                VerticalOptions="Center"
+                
+                />
+        <Button Text="SHARE LYRICS" Clicked="Button_Clicked"
+               BackgroundColor="HotPink"
+               VerticalOptions="Center"
+                />
+
+        </StackLayout>
+    </ScrollView>
+
+
+
+</ContentPage>
